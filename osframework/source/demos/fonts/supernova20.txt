@@ -1,0 +1,28 @@
+Define CharList
+ ( '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '+', '-', ',' , ':');
+
+Define WidthList
+ (  13,  12,  13,  12,  13,  13,  13,  12,  13,  13,  13,   9,   3 , 3);
+
+Define RectList
+ ( (   0,  0, 12, 28), (  13,  0,  4, 28), (  18,  0, 12, 28), (  31,  0, 12, 28),
+   (  44,  0, 12, 28), (  57,  0, 12, 28), (  70,  0, 12, 28), (  83,  0, 11, 28),
+   (  95,  0, 12, 28), ( 108,  0, 12, 28), ( 121,  0, 12, 28), ( 134,  0,  9, 28),
+   ( 144,  0,  3, 28), ( 148,  0,  3, 28));
+
+Define OffsetList
+ ( ( 0, 0), ( 6, 0), ( 0, 0), ( 0, 0), ( 0, 0), ( 0, 0), ( 0, 0), ( 0, 0),
+   ( 0, 0), ( 0, 0), ( 0, 0), ( 0, 0), ( 0, 0), ( 0, 0));
+
+CreateLayer               Main;
+LayerSetImage             Main 'supernova20';
+LayerSetAscent            Main 23;
+LayerSetCharWidths        Main CharList WidthList;
+LayerSetCharWidths        Main (' ') (8);
+LayerSetImageMap          Main CharList RectList;
+LayerSetCharOffsets       Main CharList OffsetList;
+LayerSetAscentPadding     Main 0;
+LayerSetLineSpacingOffset Main 0;
+LayerSetPointSize         Main 20;
+
+SetDefaultPointSize  20;

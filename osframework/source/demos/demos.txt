@@ -1,0 +1,199 @@
+
+           PopCap Games Open Source Framework Demos                		
+										
+               http://developer.popcap.com					
+                                                                  		
+   Author: Jeff "Architekt" Weinstein                             		
+                                                                  		
+   	These demos are designed to quickly get you up to speed on      	
+   	the most common and powerful features of the PopCap Framework.  	
+   	Start at the first demo and completely read through each        	
+   	.h and .cpp file. The suggested reading order is:               	
+   	main.cpp, GameApp.h/.cpp, Board.h/.cpp and then any newly       	
+   	added files after that. The demos are meant to illustrate some  	
+   	of the most common and powerful features of the framework and   	
+   	will not explain every single detail. However, after having     	
+   	read through and understood each demo, you will be able         	
+   	to figure out and understand the rest of the framework's        	
+   	features.                                                       	
+       	Please note that the included images, sounds, and music 	
+   	are taken from various PopCap games and may not be used         	
+   	for commercial purposes. They are provided as a resource to     	
+   	you to help out with the learning process.                      	
+       	If you find any inaccuracies, bugs, or have suggestions     	
+   	for improving the demos, please use the forums on the           	
+   	main website, http://developer.popcap.com                       	
+                                                                   		
+					VERSION HISTORY				
+										
+					Framework 1.3:				
+										
+		* Updated all demos to work with the wide string projects.
+			Do not be alarmed by all the _S() macros: they don't do
+			anything in normal apps and are designed for the WideString
+			projects. All std::string's have been replaced with SexyString,
+			which is a typedef that is std::string in non-widestring versions,
+			and std::wstring in widestring versions.
+
+		* Fixed bug in all projects where the SexyAppFramework project was for some 
+			reason not marked to build: this meant that you had to manually compile
+			the framework before you compiled all the demos. You should now simply be
+			able to do a Rebuild All without any manual fussing around.
+										
+					Framework 1.22:				
+										
+		* Support for Visual Studio 2005				
+		* Fixed some C++ language conformance issues			
+		* Fixed some bugs with the flash widget and rendering issues	
+		* Got tired of casting warnings, properly casting stuff now	
+		* Fixed some demo bugs and bad programming practices		
+		* IMPORTANT NEW CHANGE: in order to cut filesize bloat, caused	
+			by the addition of the software triangle rasterizer	
+			code in 1.21, you now need to do the following IF you	
+			use DrawImageMatrix or DrawImageTransform (with a 	
+			complex transformation) or if you get errors compiling	
+			or at run time you get the assert "You need to call	
+			SWTri_AddDrawTriFunc or SWTri_AddAllDrawTriFuncs"	
+										
+			1. Include "SexyAppFramework/SWTri.h"			
+			2. Call the function SWTri_AddAllDrawTriFuncs()		
+			3. Alternatively to #2, if you know which triangle draw	
+			functions you need, you can add them specifically via	
+			SWTri_AddDrawTriFunc(...) and specifying which draw	
+			function you need (check SWTri.h for a list).		
+										
+                                                                   		
+					Framework 1.2:				
+                                                                   		
+		* Corrected comment about the Popup function not working 	
+			in fullscreen mode.					
+		* Removed call to Shutdown() in LoadingThreadProc (although 	
+			this is no longer incorrect as of Framework 1.2, it	
+			IS incorrect in previous framework versions. For	
+			backwards compatibility, it has been changed.)		
+		* Removed some incorrect comments about resource manager 	
+			calling Shutdown					
+		* Added new demo, XMLDemo, showing how to use the XMLParser	
+			class for most video game XML needs.			
+		* Added new demo, V12Demo, showing the new features of		
+			Framework 1.2						
+		* Updated Demo5::DemoDialog.cpp::ButtonDepress to work with	
+			the 1.2 changes, as well as the options dialog in	
+			Hun-garr.						
+										
+	Framework 1.0:								
+		Initial release								
+
+
+Demo1:
+-------
+* Setting app width/height
+* Drawing primitives
+* Changing colors
+* Loading thread proc
+* Widget basics: Adding, removing, drawing, updating
+
+Demo2:
+------
+* Loading and displaying fonts
+* Loading and displaying images
+* Colorizing images
+* Additive drawing
+* Paletizing images
+* Loading/playing sounds
+
+Demo3:
+------
+* Enabling auto-detect 3D
+* Modifying image bits
+* Stretching images
+* Mirroring/flipping images
+* Animation using image strips
+* Widgets: buttons, listeners, basic events, adding/removing, mouse move/drag/down/up
+
+Demo4:
+------
+* Using the resource manager
+* Title screen with progress bar
+* Loading/playing music
+* Playing sounds with pitch and panning values changed
+* smooth motion with UpdateF
+* Reading/writing to files/registry
+* Getting command line switches
+* Widgets: Hyperlink widget, edit widget, checkbox, list, scrollbars, safedeletewidget
+
+Demo5:
+------
+* Drawing differently if 3D or 2D
+* Using Translate instead of using XYs
+* Keyboard input, setting focus
+* Widgets: Dialog box, sliders, an options dialog box
+* Advanced widget topics: mClip, using Layout_ flags, using images
+* Random numbers
+* Catching memory leaks
+* Profiling
+
+
+Demo6:
+------
+* Game, using topics from above and including:
+* Custom cursors
+
+V12Demo:
+--------
+This demo shows off the new features in the 1.2 release of the framework.
+It builds on the knowledge of demos 1-5 so you MUST have read and understood
+those demos prior to reading this one, as previously covered material
+will either be not commented or minimally so. In addition, you REALLY REALLY
+should have read through the documentation included with the 1.2 release. 
+
+
+* How to use the new InitHook/ShutdownHook for slightly safer/easier 
+	init/shutdown procedures
+
+* How to use the new DialogListener class, to listen to button events 
+	specifically from a dialog (in contrast to using ButtonListener and
+	checking if the button ID is dialog ID + 2000 or 3000).
+
+* How to use flags to set the default behavior of a dialog box
+
+* How to use flags to modify widget behavior, such as always marking
+	dirty, not allowing mouse events, etc.
+
+* How to take advantage of the new widget heirarchy, which lets you
+	very easily add/place widgets within a parent widget with less code
+	and less mess and do some neat things without tons of code.
+
+* How to use the new overlay drawing system, which eliminates the need
+	for a widget overlay (like the one in the Hun-garr demo for pausing).
+
+* How to easily push/pop/preserve graphics state
+
+* How to use the new and powerful Graphics::DrawImageTransform/F to
+	very quickly and easily apply rotation, scaling, translation, or any combo
+	to an image, as opposed to the previous messy way of doing things.
+
+* How to use the also new and also cool Graphics::DrawImageMatrix
+	function to draw an image in 2D and/or 3D with a matrix. This allows
+	some neat and fast tricks like easy flipping, mirroring, scaling, etc
+	with a minimal number of lines.
+
+* How to use UpdateApp to help with transitions
+
+* How to be master of the universe. OK maybe not.
+
+
+XMLDemo:
+--------
+* How to use the XMLParser class to read in XML files
+* How to sift through the XML data and extract the information you need
+
+NOTE: You should have read and understood demos 1 and 2 before 
+this, as topics that are already covered will be either not commented
+or minimally so. In addition, this demo uses just a couple features from the v.1.2
+release of the framework, so it is beneficial to have read and understood
+V12Demo as well. Though, if you fully understand demos 1 and 2, you'll probably
+be fine enough.
+
+
+

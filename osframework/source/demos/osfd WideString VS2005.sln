@@ -1,0 +1,91 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Demo1", "Demo1\Demo1 VS2005 WideString.vcproj", "{F1FFB2ED-BC5D-40C9-A46B-92DAFEC91BBC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DA08CABA-92AC-40F0-B63D-6ACE7814D600} = {DA08CABA-92AC-40F0-B63D-6ACE7814D600}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Demo2", "Demo2\Demo2 VS2005 WideString.vcproj", "{3729E951-A2F8-4516-BFF8-312040890EA4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DA08CABA-92AC-40F0-B63D-6ACE7814D600} = {DA08CABA-92AC-40F0-B63D-6ACE7814D600}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Demo3", "Demo3\Demo3 VS2005 WideString.vcproj", "{07A2B4F6-12C3-47E6-AE89-B4013461A13A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DA08CABA-92AC-40F0-B63D-6ACE7814D600} = {DA08CABA-92AC-40F0-B63D-6ACE7814D600}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Demo4", "Demo4\Demo4 VS2005 WideString.vcproj", "{11091E68-2497-4470-9719-8ED84CECF827}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DA08CABA-92AC-40F0-B63D-6ACE7814D600} = {DA08CABA-92AC-40F0-B63D-6ACE7814D600}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Demo5", "Demo5\Demo5 VS2005 WideString.vcproj", "{7B08C75A-BF48-43F1-9B62-B1982584C06B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DA08CABA-92AC-40F0-B63D-6ACE7814D600} = {DA08CABA-92AC-40F0-B63D-6ACE7814D600}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Hun-garr", "Hun-garr\Hun-garr VS2005 WideString.vcproj", "{1D5FBC14-C869-4CC1-8337-B084767012C3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DA08CABA-92AC-40F0-B63D-6ACE7814D600} = {DA08CABA-92AC-40F0-B63D-6ACE7814D600}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XMLDemo", "XMLDemo\XMLDemo VS2005 WideString.vcproj", "{6A242898-B1D4-4EEA-AE61-AF1002462917}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DA08CABA-92AC-40F0-B63D-6ACE7814D600} = {DA08CABA-92AC-40F0-B63D-6ACE7814D600}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "V12Demo", "V12Demo\V12Demo VS2005 WideString.vcproj", "{9A062D6E-B4A5-44F6-8D4D-84F19BCBF4FF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DA08CABA-92AC-40F0-B63D-6ACE7814D600} = {DA08CABA-92AC-40F0-B63D-6ACE7814D600}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SexyAppBase WSTRING", "..\SexyAppFramework\SexyAppBase VS2005 WideString.vcproj", "{DA08CABA-92AC-40F0-B63D-6ACE7814D600}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F1FFB2ED-BC5D-40C9-A46B-92DAFEC91BBC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F1FFB2ED-BC5D-40C9-A46B-92DAFEC91BBC}.Debug|Win32.Build.0 = Debug|Win32
+		{F1FFB2ED-BC5D-40C9-A46B-92DAFEC91BBC}.Release|Win32.ActiveCfg = Release|Win32
+		{F1FFB2ED-BC5D-40C9-A46B-92DAFEC91BBC}.Release|Win32.Build.0 = Release|Win32
+		{3729E951-A2F8-4516-BFF8-312040890EA4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3729E951-A2F8-4516-BFF8-312040890EA4}.Debug|Win32.Build.0 = Debug|Win32
+		{3729E951-A2F8-4516-BFF8-312040890EA4}.Release|Win32.ActiveCfg = Release|Win32
+		{3729E951-A2F8-4516-BFF8-312040890EA4}.Release|Win32.Build.0 = Release|Win32
+		{07A2B4F6-12C3-47E6-AE89-B4013461A13A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{07A2B4F6-12C3-47E6-AE89-B4013461A13A}.Debug|Win32.Build.0 = Debug|Win32
+		{07A2B4F6-12C3-47E6-AE89-B4013461A13A}.Release|Win32.ActiveCfg = Release|Win32
+		{07A2B4F6-12C3-47E6-AE89-B4013461A13A}.Release|Win32.Build.0 = Release|Win32
+		{11091E68-2497-4470-9719-8ED84CECF827}.Debug|Win32.ActiveCfg = Debug|Win32
+		{11091E68-2497-4470-9719-8ED84CECF827}.Debug|Win32.Build.0 = Debug|Win32
+		{11091E68-2497-4470-9719-8ED84CECF827}.Release|Win32.ActiveCfg = Release|Win32
+		{11091E68-2497-4470-9719-8ED84CECF827}.Release|Win32.Build.0 = Release|Win32
+		{7B08C75A-BF48-43F1-9B62-B1982584C06B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7B08C75A-BF48-43F1-9B62-B1982584C06B}.Debug|Win32.Build.0 = Debug|Win32
+		{7B08C75A-BF48-43F1-9B62-B1982584C06B}.Release|Win32.ActiveCfg = Release|Win32
+		{7B08C75A-BF48-43F1-9B62-B1982584C06B}.Release|Win32.Build.0 = Release|Win32
+		{1D5FBC14-C869-4CC1-8337-B084767012C3}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1D5FBC14-C869-4CC1-8337-B084767012C3}.Debug|Win32.Build.0 = Debug|Win32
+		{1D5FBC14-C869-4CC1-8337-B084767012C3}.Release|Win32.ActiveCfg = Release|Win32
+		{1D5FBC14-C869-4CC1-8337-B084767012C3}.Release|Win32.Build.0 = Release|Win32
+		{6A242898-B1D4-4EEA-AE61-AF1002462917}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6A242898-B1D4-4EEA-AE61-AF1002462917}.Debug|Win32.Build.0 = Debug|Win32
+		{6A242898-B1D4-4EEA-AE61-AF1002462917}.Release|Win32.ActiveCfg = Release|Win32
+		{6A242898-B1D4-4EEA-AE61-AF1002462917}.Release|Win32.Build.0 = Release|Win32
+		{9A062D6E-B4A5-44F6-8D4D-84F19BCBF4FF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9A062D6E-B4A5-44F6-8D4D-84F19BCBF4FF}.Debug|Win32.Build.0 = Debug|Win32
+		{9A062D6E-B4A5-44F6-8D4D-84F19BCBF4FF}.Release|Win32.ActiveCfg = Release|Win32
+		{9A062D6E-B4A5-44F6-8D4D-84F19BCBF4FF}.Release|Win32.Build.0 = Release|Win32
+		{DA08CABA-92AC-40F0-B63D-6ACE7814D600}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DA08CABA-92AC-40F0-B63D-6ACE7814D600}.Debug|Win32.Build.0 = Debug|Win32
+		{DA08CABA-92AC-40F0-B63D-6ACE7814D600}.Release|Win32.ActiveCfg = Release|Win32
+		{DA08CABA-92AC-40F0-B63D-6ACE7814D600}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

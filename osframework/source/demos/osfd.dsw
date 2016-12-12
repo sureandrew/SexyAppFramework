@@ -1,0 +1,149 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "Demo1"=.\Demo1\Demo1.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name SexyAppBase
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "Demo2"=.\Demo2\Demo2.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name SexyAppBase
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "Demo3"=.\Demo3\Demo3.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name SexyAppBase
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "Demo4"=.\Demo4\Demo4.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name SexyAppBase
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "Demo5"=.\Demo5\Demo5.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name SexyAppBase
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "Hungarr"=".\Hun-garr\Hungarr.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name SexyAppBase
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "SexyAppBase"=..\SexyAppFramework\SexyAppBase.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "V12Demo"=.\V12Demo\V12Demo.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name SexyAppBase
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "XMLDemo"=.\XMLDemo\XMLDemo.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name SexyAppBase
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+
