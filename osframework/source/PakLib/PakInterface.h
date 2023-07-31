@@ -71,6 +71,8 @@ class PakInterface : public PakInterfaceBase
 public:
 	PakCollectionList		mPakCollectionList;	
 	PakRecordMap			mPakRecordMap;
+	std::string				mDecryptPassword;
+	std::string				mError;
 
 public:
 	bool					PFindNext(PFindData* theFindData, LPWIN32_FIND_DATA lpFindFileData);

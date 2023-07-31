@@ -87,14 +87,30 @@ bool BassMusicInterface::LoadMusic(int theSongId, const std::string& theFileName
 {
 	HMUSIC aHMusic = NULL;
 	HSTREAM aStream = NULL;
-	
+
 	std::string anExt;
 	int aDotPos = theFileName.find_last_of('.');
 	if (aDotPos!=std::string::npos)
 		anExt = StringToLower(theFileName.substr(aDotPos+1));
 
 	if (anExt=="wav" || anExt=="ogg" || anExt=="mp3")
-		aStream = gBass->BASS_StreamCreateFile(FALSE, (void*) theFileName.c_str(), 0, 0, 0);
+	{
+		PFILE* aFP = p_fopen(theFileName.c_str(), "rb");
+		if (aFP == NULL)
+			return false;
+
+		p_fseek(aFP, 0, SEEK_END);
+		int aSize = p_ftell(aFP);
+		p_fseek(aFP, 0, SEEK_SET);
+
+		uchar* aData = new uchar[aSize];
+		p_fread(aData, 1, aSize, aFP);
+		p_fclose(aFP);
+
+		aStream = gBass->BASS_StreamCreateFile(TRUE, aData, 0, aSize, 0);
+		// it seems like it is deleted from BASS_StreamFree
+		//delete aData; 	
+	}
 	else
 	{
 		PFILE* aFP = p_fopen(theFileName.c_str(), "rb");
@@ -110,9 +126,9 @@ bool BassMusicInterface::LoadMusic(int theSongId, const std::string& theFileName
 		p_fclose(aFP);
 
 		if (gBass->mVersion2)
-			aHMusic = gBass->BASS_MusicLoad2(FALSE, (void*) theFileName.c_str(), 0, 0, BASS_MUSIC_LOOP | BASS2_MUSIC_RAMP, 0);
+			aHMusic = gBass->BASS_MusicLoad2(TRUE, aData, 0, 0, mMusicLoadFlags, 0);
 		else
-			aHMusic = gBass->BASS_MusicLoad(FALSE, (void*) theFileName.c_str(), 0, 0, BASS_MUSIC_LOOP);
+			aHMusic = gBass->BASS_MusicLoad(TRUE, aData, 0, 0, mMusicLoadFlags);  
 
 		delete aData;
 	}

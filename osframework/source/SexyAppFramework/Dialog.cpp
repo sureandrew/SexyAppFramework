@@ -49,13 +49,13 @@ Dialog::Dialog(Image* theComponentImage, Image* theButtonComponentImage, int the
 
 		if (mButtonMode == BUTTONS_YES_NO)
 		{
-			mYesButton->mLabel = DIALOG_YES_STRING;
-			mNoButton->mLabel = DIALOG_NO_STRING;
+			mYesButton->mLabel = gSexyAppBase->GetString(("ID_YES"), DIALOG_YES_STRING);
+			mNoButton->mLabel = gSexyAppBase->GetString(("ID_NO"), DIALOG_NO_STRING);
 		}
 		else
 		{
-			mYesButton->mLabel = DIALOG_OK_STRING;
-			mNoButton->mLabel = DIALOG_CANCEL_STRING;
+			mYesButton->mLabel = gSexyAppBase->GetString(("ID_OK"), DIALOG_OK_STRING);
+			mNoButton->mLabel = gSexyAppBase->GetString(("ID_CANCEL"), DIALOG_CANCEL_STRING);
 		}
 	}
 	else if (mButtonMode == BUTTONS_FOOTER)

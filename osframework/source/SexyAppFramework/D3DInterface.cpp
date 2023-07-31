@@ -361,7 +361,7 @@ bool D3DInterface::PreDraw()
 		HRESULT hr;
 
 
-		if (!SUCCEEDED(mD3DDevice->SetRenderTarget(mDDSDrawSurface, 0))) // this happens when there's been a mode switch (this caused the nvidia screensaver bluescreen)
+		if (mD3DDevice == NULL || mDDSDrawSurface == NULL || !SUCCEEDED(mD3DDevice->SetRenderTarget(mDDSDrawSurface, 0))) // this happens when there's been a mode switch (this caused the nvidia screensaver bluescreen)
 		{
 			gD3DInterfacePreDrawError = true;
 			return false;

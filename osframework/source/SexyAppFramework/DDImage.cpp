@@ -76,7 +76,9 @@ bool DDImage::LockSurface()
 	{
 		memset(&mLockedSurfaceDesc, 0, sizeof(mLockedSurfaceDesc));
 		mLockedSurfaceDesc.dwSize = sizeof(mLockedSurfaceDesc);
-		int aResult = GetSurface()->Lock(NULL, &mLockedSurfaceDesc, DDLOCK_SURFACEMEMORYPTR | DDLOCK_WAIT, NULL);
+		int aResult = S_FALSE;
+		if(GetSurface())
+			aResult = GetSurface()->Lock(NULL, &mLockedSurfaceDesc, DDLOCK_SURFACEMEMORYPTR | DDLOCK_WAIT, NULL);
 
 		if (aResult != DD_OK)
 			return false;

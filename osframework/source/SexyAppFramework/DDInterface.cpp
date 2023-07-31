@@ -1151,7 +1151,7 @@ void DDInterface::RestoreOldCursorAreaFrom(LPDIRECTDRAWSURFACE theSurface, bool 
 
 void DDInterface::DrawCursorTo(LPDIRECTDRAWSURFACE theSurface, bool adjust)
 {
-	if ((mCursorImage != NULL) && (mPrimarySurface != NULL))
+	if ((mOldCursorArea != NULL) && (mCursorImage != NULL) && (mPrimarySurface != NULL))
 	{
 		DDSURFACEDESC aDesc;
 		ZeroMemory(&aDesc, sizeof(aDesc));

@@ -468,8 +468,8 @@ void EditWidget::ProcessKey(KeyCode theKey, SexyChar theChar)
 	else
 	{
 		SexyString aString = SexyString(1, theChar);
-		unsigned int uTheChar = (unsigned int)theChar;
-		unsigned int range = 127;
+		unsigned char uTheChar = (unsigned int)theChar;
+		unsigned char range = 127;
 		if (gSexyAppBase->mbAllowExtendedChars)
 		{
 			range = 255;

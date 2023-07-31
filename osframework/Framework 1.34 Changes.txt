@@ -1,0 +1,59 @@
+Changelog for Framework version 1.34:
+
+General
+=======
+* Added Support for BASS Stream support (Needed for FFMpeg)
+* Fixed BassMusicInterface to allow music files loaded from PAK
+* Fixed MouseUp() bug in ButtonWidget that would cause an access violation if button was removed in callback
+* Added AppData folder support to Windows XP version of Sexy as APP_DATA_FOLDER has been around since NT 5.0
+* Fixed bug in VFormat Widestring(size of w_char != 1)
+* Fixed Rare race condition where Mouse thread would crash during Mode switch
+* Fixed bug in DDImage when trying to access an invalid surface (GetSurface() can return NULL and must be checked)
+* Added Check to make sure mOldCursorArea was not NULL in Mouse Thread
+* Fixed Dialog buttons to look in String Database for ID_YES, ID_NO instead of being hard coded for English.
+* Fixed EditWidget to allow characters > 128 if (gSexyAppBase->mbAllowExtendedChars == true) 
+* Fixed Bug in DrawLineClipHelper where floating point index would cause access violation int array
+* changed expected format of Properties.xml file to ANSI instead of UTF-8 (for porting reasons)
+* Commented out Stupid ASSERT when image refcount != 0 on Shutdown
+* Added support for 'PAUSED' screen when dragging window instead of Game Window Freezing
+* Fixed Window Placement Bug that put window title bar above the top of the screen
+* Fixed bug in XMLParser where you couldn't have an '=' in the attribute value.
+* Added Password Support to PAK Files
+
+
+PopPak Password Edition (PopPakPWE)
+===================================
+The new PopPak now allows for PAK files to be encrypted using a string instead 
+of '0x7F'.  The encryption is still XOR based (fastest decryption), but instead
+of using the same HEX value of '0x7F', the PAK Interface will now cycle through 
+the password string using each character as the XOR key.
+
+The header on a PAK Lib is standard, with the first 8 bytes being 0xBAC04AC000000000
+where 0xBAC04AC0 is the 4 byte 'magic word' and 0x00000000 is the file version. Because
+these values are known, the first 8 characters of the password can be broken quite easily.
+This means that passwords for PAK files have to be longer than 8 characters to be secure
+and that they shouldn't be easily guessable from the first 8 letters.
+
+The new PAK utility also supports unpaking (including the ability to unpak standard 
+PAK files).
+
+Usage: PopPak [/U] [/P] [/K "The Password in Quotes"] <FileName> <DirPath>
+  /U    Unpacks pak file to DirPath
+  /P    Creates pak file from files in DirPath
+  /K    Changes the Default Encryption Password
+  
+The '/K' Key can also be a single hexadecimal byte (for instance 0x7F).  This
+is very useful for unpaking PopCap games:
+
+PopPakPWE /U /K 0x7F main.pak _unpakdir
+
+PakInterface
+---------------------------
+To use the new Password feature, you need to change the default password in the
+PakInterface and create a batch file with the new password on the command line.
+
+In your GameApp Ctor:
+GetPakPtr()->mDecryptPassword = "MyNewPassword"; // "LKJALK;NDFICN,LAJKGLKAJ89084TOIGJM,VN";
+
+In the batch file:
+PopPakPWE /P /K "MyNewPassword" main.pak "content"

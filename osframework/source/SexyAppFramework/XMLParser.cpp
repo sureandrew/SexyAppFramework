@@ -642,7 +642,7 @@ bool XMLParser::NextElement(XMLElement* theElement)
 							}
 							else
 							{
-								if (c == L'=')
+								if (!AttributeVal && c == L'=')
 								{
 									AttributeVal = true;
 									gotEndQuote = false;

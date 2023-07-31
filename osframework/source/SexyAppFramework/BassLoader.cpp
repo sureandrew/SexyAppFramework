@@ -78,6 +78,7 @@ BASS_INSTANCE::BASS_INSTANCE(const char *dllName)
 	GETPROC(BASS_MusicSetAttribute);
 
 	GETPROC(BASS_StreamCreateFile);
+	GETPROC(BASS_StreamCreate);
 	GETPROC(BASS_StreamFree);
 
 	GETPROC(BASS_MusicGetOrders);

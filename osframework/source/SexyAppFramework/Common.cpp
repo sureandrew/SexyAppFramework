@@ -97,7 +97,7 @@ std::string Sexy::GetAppDataFolder()
 
 void Sexy::SetAppDataFolder(const std::string& thePath)
 {
-	if (CheckForVista())
+// 	if (CheckForVista())
 	{
 		std::string aPath = thePath;
 		if (!aPath.empty())
@@ -978,7 +978,7 @@ std::wstring Sexy::vformat(const wchar_t* fmt, va_list argPtr)
 	{
         // Try a bigger size
         attemptedSize *= 2;
-		heapBuffer = (wchar_t*)realloc(heapBuffer, (attemptedSize + 1));
+		heapBuffer = (wchar_t*)realloc(heapBuffer, (attemptedSize + 1)*sizeof(wchar_t));
 #ifdef _WIN32
 		numChars = _vsnwprintf(heapBuffer, attemptedSize, fmt, argPtr);
 #else
@@ -988,7 +988,7 @@ std::wstring Sexy::vformat(const wchar_t* fmt, va_list argPtr)
 
 	heapBuffer[numChars] = 0;
 
-	std::wstring result = std::wstring(heapBuffer);
+	std::wstring result(heapBuffer);
 
     free(heapBuffer);
 

@@ -598,7 +598,7 @@ bool Graphics::DrawLineClipHelper(double* theStartX, double* theStartY, double* 
 
 	if (aEndY >= mClipRect.mY + mClipRect.mHeight)
 	{
-		if (aStartY >= mClipRect.mY + mClipRect.mHeight)
+		if (ceil(aStartY) >= mClipRect.mY + mClipRect.mHeight)
 			return false;
 
 		double aSlope = (aEndX - aStartX) / (aEndY - aStartY);

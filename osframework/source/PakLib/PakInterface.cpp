@@ -27,6 +27,9 @@ PakInterface::PakInterface()
 {
 	if (GetPakPtr() == NULL)
 		*gPakInterfaceP = this;
+
+	// Init to be the same default as the default in PopPakPWE.exe
+	mDecryptPassword = "PopCapSexyFramework";
 }
 
 PakInterface::~PakInterface()
@@ -79,6 +82,10 @@ bool PakInterface::AddPakFile(const std::string& theFileName)
 	FRead(&aMagic, sizeof(ulong), 1, aFP);
 	if (aMagic != 0xBAC04AC0)
 	{
+		// This next line is for debugging purposes only.  If you release a game
+		// with this enabled, then the game will be hacked
+// 		mError = "Invalid File or Invalid Password: " + mDecryptPassword;
+		mError = "Invalid File or Invalid Password.";
 		FClose(aFP);
 		return false;
 	}
@@ -87,6 +94,10 @@ bool PakInterface::AddPakFile(const std::string& theFileName)
 	FRead(&aVersion, sizeof(ulong), 1, aFP);
 	if (aVersion > 0)
 	{
+		// This next line is for debugging purposes only.  If you release a game
+		// with this enabled, then the game will be hacked
+// 		mError = "Invalid Version or Invalid Password: " + mDecryptPassword;
+		mError = "Invalid Version or Invalid Password.";
 		FClose(aFP);
 		return false;
 	}
@@ -255,8 +266,13 @@ size_t PakInterface::FRead(void* thePtr, int theElemSize, int theCount, PFILE* t
 
 		uchar* src = (uchar*) theFile->mRecord->mCollection->mDataPtr + theFile->mRecord->mStartPos + theFile->mPos;
 		uchar* dest = (uchar*) thePtr;		
+
+		int aPos = theFile->mRecord->mStartPos + theFile->mPos;
+		int aPWLength = mDecryptPassword.length();
+		aPos = aPos % aPWLength;
+
 		for (int i = 0; i < aSizeBytes; i++)
-			*(dest++) = (*src++) ^ 0xF7; // 'Decrypt'
+			*(dest++) = (*src++) ^ mDecryptPassword[(aPos++)%aPWLength]; // 'Decrypt'
 		theFile->mPos += aSizeBytes;
 		return aSizeBytes / theElemSize;
 	}
@@ -272,7 +288,12 @@ int PakInterface::FGetC(PFILE* theFile)
 		{
 			if (theFile->mPos >= theFile->mRecord->mSize)
 				return EOF;		
-			char aChar = *((char*) theFile->mRecord->mCollection->mDataPtr + theFile->mRecord->mStartPos + theFile->mPos++) ^ 0xF7;
+
+			int aPos = theFile->mRecord->mStartPos + theFile->mPos;
+			int aPWLength = mDecryptPassword.length();
+			aPos = aPos % aPWLength;
+
+			char aChar = *((char*) theFile->mRecord->mCollection->mDataPtr + theFile->mRecord->mStartPos + theFile->mPos++) ^ mDecryptPassword[(aPos++)%aPWLength];
 			if (aChar != '\r')
 				return (uchar) aChar;
 		}
@@ -306,7 +327,12 @@ char* PakInterface::FGetS(char* thePtr, int theSize, PFILE* theFile)
 					return NULL;
 				break;
 			}
-			char aChar = *((char*) theFile->mRecord->mCollection->mDataPtr + theFile->mRecord->mStartPos + theFile->mPos++) ^ 0xF7;
+
+			int aPos = theFile->mRecord->mStartPos + theFile->mPos;
+			int aPWLength = mDecryptPassword.length();
+			aPos = aPos % aPWLength;
+
+			char aChar = *((char*) theFile->mRecord->mCollection->mDataPtr + theFile->mRecord->mStartPos + theFile->mPos++) ^ mDecryptPassword[(aPos++)%aPWLength];
 			if (aChar != '\r')
 				thePtr[anIdx++] = aChar;
 			if (aChar == '\n')

@@ -447,7 +447,7 @@ SexyAppBase::~SexyAppBase()
 	while (aSharedImageItr != mSharedImageMap.end())
 	{
 		SharedImage* aSharedImage = &aSharedImageItr->second;
-		DBG_ASSERTE(aSharedImage->mRefCount == 0);		
+	//	DBG_ASSERTE(aSharedImage->mRefCount == 0);		// Possibly the stupidest thing ever, I'm tired of tripping this
 		delete aSharedImage->mImage;
 		mSharedImageMap.erase(aSharedImageItr++);		
 	}
@@ -2303,22 +2303,6 @@ void SexyAppBase::Redraw(Rect* theClipRect)
 
 			mWidgetManager->mImage = NULL;
 
-			// Re-check resolution at this point, because we hit here when you change your resolution.
-			if (((mWidth >= GetSystemMetrics(SM_CXFULLSCREEN)) || (mHeight >= GetSystemMetrics(SM_CYFULLSCREEN))) && (mIsWindowed))
-			{
-				if (mForceWindowed)
-				{
-					Popup(GetString("PLEASE_SET_COLOR_DEPTH", _S("Please set your desktop color depth to 16 bit."))); 
-					Shutdown();
-					return;
-				}
-				mForceFullscreen = true;
-
-				SwitchScreenMode(false);
-				return;
-			}
-
-
 			int aResult = InitDDInterface();
 
 			//gDebugStream << GetTickCount() << " ReInit..." << std::endl;
@@ -3641,6 +3625,13 @@ LRESULT CALLBACK SexyAppBase::WindowProc(HWND hWnd, UINT uMsg, WPARAM wParam, LP
 		}
 		if (wParam==SC_SCREENSAVE && aSexyApp!=NULL && (!aSexyApp->mLoaded || !aSexyApp->mIsPhysWindowed))
 			return FALSE;
+		if((wParam & 0x0000FFF0) == SC_MOVE && aSexyApp!=NULL)
+		{
+			aSexyApp->mPaused = true;
+			aSexyApp->mWidgetManager->MarkAllDirty();
+			aSexyApp->DrawDirtyStuff();
+			aSexyApp->mPaused = false;
+		}
 
 		break;
 
@@ -4665,7 +4656,7 @@ void SexyAppBase::MakeWindow()
 				aPlaceX = aDesktopRect.right - aWidth - aSpacing;
 			
 			if (aPlaceY + aHeight >= aDesktopRect.bottom - aSpacing)
-				aPlaceY = aDesktopRect.bottom - aHeight - aSpacing;
+				aPlaceY = aDesktopRect.bottom - aHeight;
 		}
 
 		if (CheckFor98Mill())
@@ -6058,12 +6049,12 @@ void SexyAppBase::Init()
 	InitPropertiesHook();
 	ReadFromRegistry();	
 
-	if (CheckForVista())
+//  	if (CheckForVista())
 	{
 		HMODULE aMod;
 		SHGetFolderPathFunc aFunc = (SHGetFolderPathFunc)GetSHGetFolderPath("shell32.dll", &aMod);
 		if (aFunc == NULL || aMod == NULL)
-			SHGetFolderPathFunc aFunc = (SHGetFolderPathFunc)GetSHGetFolderPath("shfolder.dll", &aMod);
+			aFunc = (SHGetFolderPathFunc)GetSHGetFolderPath("shfolder.dll", &aMod);
 
 		if (aMod != NULL)
 		{

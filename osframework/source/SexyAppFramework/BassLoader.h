@@ -68,6 +68,7 @@ struct BASS_INSTANCE
 	void(WINAPI *BASS_MusicFree)(HMUSIC handle);
 
 	HSTREAM(WINAPI *BASS_StreamCreateFile)(BOOL mem, void *file, DWORD offset, DWORD length, DWORD flags); 
+	HSTREAM(WINAPI *BASS_StreamCreate)(DWORD freq, DWORD chans, DWORD flags, STREAMPROC *proc, DWORD user); 
 	void(WINAPI *BASS_StreamFree)(HSTREAM handle);
 
 	BOOL (WINAPI *BASS_FXSetParameters)(HFX handle, void *par);

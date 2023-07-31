@@ -16,6 +16,7 @@ public:
 
 public:
 	HyperlinkWidget(int theId, ButtonListener* theButtonListener);
+	virtual ~HyperlinkWidget(){};
 
 	void					Draw(Graphics* g);
 	void					MouseEnter();
