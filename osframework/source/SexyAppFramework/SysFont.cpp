@@ -5,6 +5,7 @@
 #include "ImageFont.h"
 #include "MemoryImage.h"
 #include "D3DInterface.h"
+#include "DDInterface.h"
 #include "WidgetManager.h"
 #include <stdlib.h>
 

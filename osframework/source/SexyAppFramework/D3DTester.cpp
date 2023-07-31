@@ -5,8 +5,6 @@
 #include "D3DInterface.h"
 #include "SexyAppBase.h"
 
-
-
 using namespace Sexy;
 static const int gD3DTestTextureWidth = 64;
 static const int gD3DTestTextureHeight = 64;
@@ -620,7 +618,7 @@ bool D3DTester::Init(HWND theHWND, LPDIRECTDRAW7 theDDraw)
 	if (mCheckRegistry)
 	{
 		std::string aKey = RemoveTrailingSlash("SOFTWARE\\" + gSexyAppBase->mRegKey) + "\\Test3D";
-		RegCreateKeyExA(HKEY_CURRENT_USER, aKey.c_str(),0,"",REG_OPTION_NON_VOLATILE,KEY_ALL_ACCESS,NULL,&mRegKey,NULL);
+		RegCreateKeyExA(HKEY_CURRENT_USER, aKey.c_str(),0,const_cast<char*>(""),REG_OPTION_NON_VOLATILE,KEY_ALL_ACCESS,NULL,&mRegKey,NULL);
 	}
 
 	try

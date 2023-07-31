@@ -1,3 +1,4 @@
+#include "AutoCrit.h"
 #include "DDImage.h"
 #include <Math.h>
 #include "DDInterface.h"

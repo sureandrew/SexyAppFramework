@@ -7,7 +7,8 @@
 #include "Quantize.h"
 #include "PerfTimer.h"
 #include "SWTri.h"
-
+#include "D3DInterface.h"	
+#include "DDInterface.h"
 #include <math.h>
 
 using namespace Sexy;
@@ -1256,7 +1257,7 @@ ulong* MemoryImage::GetBits()
 		}
 		else if (mNativeAlphaData != NULL)
 		{
-			NativeDisplay* aDisplay = gSexyAppBase->mDDInterface;
+			NativeDisplay* aDisplay = (NativeDisplay*) gSexyAppBase->mDDInterface;
 
 			const int rMask = aDisplay->mRedMask;
 			const int gMask = aDisplay->mGreenMask;

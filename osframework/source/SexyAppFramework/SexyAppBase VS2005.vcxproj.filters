@@ -1,0 +1,1203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Graphics">
+      <UniqueIdentifier>{a02fde79-0b63-437d-b2d9-92f152f62974}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\Graphics Source">
+      <UniqueIdentifier>{c0ed898f-b2eb-439b-b21d-acb129a2809d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\Graphics Include">
+      <UniqueIdentifier>{b06cae56-aea3-427b-a9fb-17d5b6fb0f15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\Inc Routines">
+      <UniqueIdentifier>{3db7b95a-13a9-4c66-81c6-3b1f7c72ef86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ImageLib">
+      <UniqueIdentifier>{4b629b31-2aff-4431-a7ef-66c8a474a19b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ImageLib\PNG">
+      <UniqueIdentifier>{58f39d48-7dcb-4d8d-b1cc-5c87f6da15d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ImageLib\JPEG">
+      <UniqueIdentifier>{0271d00a-7d67-4b68-b9d3-b50b9c73152a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ImageLib\ZLIB">
+      <UniqueIdentifier>{35a02bf9-7595-4919-8cc2-ef66205ddca8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ImageLib\JPEG2000">
+      <UniqueIdentifier>{a62a62eb-0b9f-4c53-ab1a-e3a8ea9f8638}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Misc">
+      <UniqueIdentifier>{b812292d-b27b-4c3a-83c2-03572aeba7d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Misc\Misc Source">
+      <UniqueIdentifier>{2fe8243e-52fb-4c03-b1c8-ba3998fa57ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Misc\Misc Include">
+      <UniqueIdentifier>{a7684246-e48a-4924-9c92-85e80dd5f469}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sound">
+      <UniqueIdentifier>{889249fd-25d0-4b7d-b867-9e8968f5e462}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sound\Sound Source">
+      <UniqueIdentifier>{e3ac87cc-6e07-473c-a082-0123ce06d140}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sound\Sound Include">
+      <UniqueIdentifier>{4c2966e6-eae4-4c31-a7a3-d811b7149ae7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sound\Ogg">
+      <UniqueIdentifier>{c79425f2-9b3d-4030-a2c0-d3f40961c420}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Widget">
+      <UniqueIdentifier>{7526f3ab-458f-4497-81ef-132371892690}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Widget\Widget Source">
+      <UniqueIdentifier>{16c4564a-a2fd-4d17-bc56-d8d40ccd7dce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Widget\Widget Include">
+      <UniqueIdentifier>{da733665-6615-4567-b253-d1945079768f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PakLib">
+      <UniqueIdentifier>{e6d1f241-891d-42d8-82d0-50ef605505d0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Color.cpp">
+      <Filter>Graphics\Graphics Source</Filter>
+    </ClCompile>
+    <ClCompile Include="D3DInterface.cpp">
+      <Filter>Graphics\Graphics Source</Filter>
+    </ClCompile>
+    <ClCompile Include="D3DTester.cpp">
+      <Filter>Graphics\Graphics Source</Filter>
+    </ClCompile>
+    <ClCompile Include="DDImage.cpp">
+      <Filter>Graphics\Graphics Source</Filter>
+    </ClCompile>
+    <ClCompile Include="DDInterface.cpp">
+      <Filter>Graphics\Graphics Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Font.cpp">
+      <Filter>Graphics\Graphics Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics.cpp">
+      <Filter>Graphics\Graphics Source</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicsBuild.cpp">
+      <Filter>Graphics\Graphics Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Image.cpp">
+      <Filter>Graphics\Graphics Source</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageFont.cpp">
+      <Filter>Graphics\Graphics Source</Filter>
+    </ClCompile>
+    <ClCompile Include="MemoryImage.cpp">
+      <Filter>Graphics\Graphics Source</Filter>
+    </ClCompile>
+    <ClCompile Include="NativeDisplay.cpp">
+      <Filter>Graphics\Graphics Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Quantize.cpp">
+      <Filter>Graphics\Graphics Source</Filter>
+    </ClCompile>
+    <ClCompile Include="SWTri.cpp">
+      <Filter>Graphics\Graphics Source</Filter>
+    </ClCompile>
+    <ClCompile Include="SysFont.cpp">
+      <Filter>Graphics\Graphics Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\ImageLib.cpp">
+      <Filter>ImageLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\png\png.c">
+      <Filter>ImageLib\PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\png\pngerror.c">
+      <Filter>ImageLib\PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\png\pngget.c">
+      <Filter>ImageLib\PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\png\pngmem.c">
+      <Filter>ImageLib\PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\png\pngpread.c">
+      <Filter>ImageLib\PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\png\pngread.c">
+      <Filter>ImageLib\PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\png\pngrio.c">
+      <Filter>ImageLib\PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\png\pngrtran.c">
+      <Filter>ImageLib\PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\png\pngrutil.c">
+      <Filter>ImageLib\PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\png\pngset.c">
+      <Filter>ImageLib\PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\png\pngtrans.c">
+      <Filter>ImageLib\PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\png\pngvcrd.c">
+      <Filter>ImageLib\PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\png\pngwio.c">
+      <Filter>ImageLib\PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\png\pngwrite.c">
+      <Filter>ImageLib\PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\png\pngwtran.c">
+      <Filter>ImageLib\PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\png\pngwutil.c">
+      <Filter>ImageLib\PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg\cdjpeg.c">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg\jcapimin.c">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg\jcapistd.c">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg\jccoefct.c">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg\jccolor.c">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg\jcdctmgr.c">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg\jchuff.c">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg\jcinit.c">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg\jcmainct.c">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg\jcmarker.c">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg\jcmaster.c">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg\jcomapi.c">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg\jcparam.c">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg\jcphuff.c">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg\jcprepct.c">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg\jcsample.c">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg\jctrans.c">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg\jdapimin.c">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg\jdapistd.c">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg\jdatadst.c">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg\jdatasrc.c">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg\jdcoefct.c">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg\jdcolor.c">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg\jddctmgr.c">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg\jdhuff.c">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg\jdinput.c">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg\jdmainct.c">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg\jdmarker.c">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg\jdmaster.c">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg\jdmerge.c">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg\jdphuff.c">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg\jdpostct.c">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg\jdsample.c">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg\jdtrans.c">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg\jerror.c">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg\jfdctflt.c">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg\jfdctfst.c">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg\jfdctint.c">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg\jidctflt.c">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg\jidctfst.c">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg\jidctint.c">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg\jidctred.c">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg\jmemmgr.c">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg\jmemnobs.c">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg\jquant1.c">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg\jquant2.c">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg\jutils.c">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg\rdbmp.c">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg\rdcolmap.c">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg\rdgif.c">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg\rdppm.c">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg\rdrle.c">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg\rdswitch.c">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg\rdtarga.c">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg\transupp.c">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg\wrbmp.c">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg\wrgif.c">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg\wrppm.c">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg\wrrle.c">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg\wrtarga.c">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\zlib\adler32.c">
+      <Filter>ImageLib\ZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\zlib\compress.c">
+      <Filter>ImageLib\ZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\zlib\crc32.c">
+      <Filter>ImageLib\ZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\zlib\deflate.c">
+      <Filter>ImageLib\ZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\zlib\gzio.c">
+      <Filter>ImageLib\ZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\zlib\infblock.c">
+      <Filter>ImageLib\ZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\zlib\infcodes.c">
+      <Filter>ImageLib\ZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\zlib\inffast.c">
+      <Filter>ImageLib\ZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\zlib\inflate.c">
+      <Filter>ImageLib\ZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\zlib\inftrees.c">
+      <Filter>ImageLib\ZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\zlib\infutil.c">
+      <Filter>ImageLib\ZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\zlib\trees.c">
+      <Filter>ImageLib\ZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\zlib\uncompr.c">
+      <Filter>ImageLib\ZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\zlib\zutil.c">
+      <Filter>ImageLib\ZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg2000\jas_cm.c">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg2000\jas_debug.c">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg2000\jas_getopt.c">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg2000\jas_icc.c">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg2000\jas_iccdata.c">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg2000\jas_image.c">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg2000\jas_init.c">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg2000\jas_malloc.c">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg2000\jas_seq.c">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg2000\jas_stream.c">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg2000\jas_string.c">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg2000\jas_tvp.c">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg2000\jas_version.c">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg2000\jp2_cod.c">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg2000\jp2_dec.c">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg2000\jp2_enc.c">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg2000\jpc_bs.c">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg2000\jpc_cs.c">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg2000\jpc_dec.c">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg2000\jpc_enc.c">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg2000\jpc_math.c">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg2000\jpc_mct.c">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg2000\jpc_mqcod.c">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg2000\jpc_mqdec.c">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg2000\jpc_mqenc.c">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg2000\jpc_qmfb.c">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg2000\jpc_t1cod.c">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg2000\jpc_t1dec.c">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg2000\jpc_t1enc.c">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg2000\jpc_t2cod.c">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg2000\jpc_t2dec.c">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg2000\jpc_t2enc.c">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg2000\jpc_tagtree.c">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg2000\jpc_tsfb.c">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageLib\jpeg2000\jpc_util.c">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="Buffer.cpp">
+      <Filter>Misc\Misc Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Common.cpp">
+      <Filter>Misc\Misc Source</Filter>
+    </ClCompile>
+    <ClCompile Include="CritSect.cpp">
+      <Filter>Misc\Misc Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug.cpp">
+      <Filter>Misc\Misc Source</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectXErrorString.cpp">
+      <Filter>Misc\Misc Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Flags.cpp">
+      <Filter>Misc\Misc Source</Filter>
+    </ClCompile>
+    <ClCompile Include="HTTPTransfer.cpp">
+      <Filter>Misc\Misc Source</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyCodes.cpp">
+      <Filter>Misc\Misc Source</Filter>
+    </ClCompile>
+    <ClCompile Include="MiscBuildBase.cpp">
+      <Filter>Misc\Misc Source</Filter>
+    </ClCompile>
+    <ClCompile Include="ModVal.cpp">
+      <Filter>Misc\Misc Source</Filter>
+    </ClCompile>
+    <ClCompile Include="MTRand.cpp">
+      <Filter>Misc\Misc Source</Filter>
+    </ClCompile>
+    <ClCompile Include="PerfTimer.cpp">
+      <Filter>Misc\Misc Source</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertiesParser.cpp">
+      <Filter>Misc\Misc Source</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceManager.cpp">
+      <Filter>Misc\Misc Source</Filter>
+    </ClCompile>
+    <ClCompile Include="SEHCatcher.cpp">
+      <Filter>Misc\Misc Source</Filter>
+    </ClCompile>
+    <ClCompile Include="SexyMatrix.cpp">
+      <Filter>Misc\Misc Source</Filter>
+    </ClCompile>
+    <ClCompile Include="XMLParser.cpp">
+      <Filter>Misc\Misc Source</Filter>
+    </ClCompile>
+    <ClCompile Include="BassLoader.cpp">
+      <Filter>Sound\Sound Source</Filter>
+    </ClCompile>
+    <ClCompile Include="BassMusicInterface.cpp">
+      <Filter>Sound\Sound Source</Filter>
+    </ClCompile>
+    <ClCompile Include="DSoundInstance.cpp">
+      <Filter>Sound\Sound Source</Filter>
+    </ClCompile>
+    <ClCompile Include="DSoundManager.cpp">
+      <Filter>Sound\Sound Source</Filter>
+    </ClCompile>
+    <ClCompile Include="FModLoader.cpp">
+      <Filter>Sound\Sound Source</Filter>
+    </ClCompile>
+    <ClCompile Include="FModMusicInterface.cpp">
+      <Filter>Sound\Sound Source</Filter>
+    </ClCompile>
+    <ClCompile Include="FModSoundInstance.cpp">
+      <Filter>Sound\Sound Source</Filter>
+    </ClCompile>
+    <ClCompile Include="FModSoundManager.cpp">
+      <Filter>Sound\Sound Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Insets.cpp">
+      <Filter>Sound\Sound Source</Filter>
+    </ClCompile>
+    <ClCompile Include="MusicInterface.cpp">
+      <Filter>Sound\Sound Source</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundBuild.cpp">
+      <Filter>Sound\Sound Source</Filter>
+    </ClCompile>
+    <ClCompile Include="ogg\bitwise.c">
+      <Filter>Sound\Ogg</Filter>
+    </ClCompile>
+    <ClCompile Include="ogg\block.c">
+      <Filter>Sound\Ogg</Filter>
+    </ClCompile>
+    <ClCompile Include="ogg\codebook.c">
+      <Filter>Sound\Ogg</Filter>
+    </ClCompile>
+    <ClCompile Include="ogg\floor0.c">
+      <Filter>Sound\Ogg</Filter>
+    </ClCompile>
+    <ClCompile Include="ogg\floor1.c">
+      <Filter>Sound\Ogg</Filter>
+    </ClCompile>
+    <ClCompile Include="ogg\framing.c">
+      <Filter>Sound\Ogg</Filter>
+    </ClCompile>
+    <ClCompile Include="ogg\info.c">
+      <Filter>Sound\Ogg</Filter>
+    </ClCompile>
+    <ClCompile Include="ogg\mapping0.c">
+      <Filter>Sound\Ogg</Filter>
+    </ClCompile>
+    <ClCompile Include="ogg\mdct.c">
+      <Filter>Sound\Ogg</Filter>
+    </ClCompile>
+    <ClCompile Include="ogg\registry.c">
+      <Filter>Sound\Ogg</Filter>
+    </ClCompile>
+    <ClCompile Include="ogg\res012.c">
+      <Filter>Sound\Ogg</Filter>
+    </ClCompile>
+    <ClCompile Include="ogg\sharedbook.c">
+      <Filter>Sound\Ogg</Filter>
+    </ClCompile>
+    <ClCompile Include="ogg\synthesis.c">
+      <Filter>Sound\Ogg</Filter>
+    </ClCompile>
+    <ClCompile Include="ogg\vorbisfile.c">
+      <Filter>Sound\Ogg</Filter>
+    </ClCompile>
+    <ClCompile Include="ogg\window.c">
+      <Filter>Sound\Ogg</Filter>
+    </ClCompile>
+    <ClCompile Include="ButtonWidget.cpp">
+      <Filter>Widget\Widget Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Checkbox.cpp">
+      <Filter>Widget\Widget Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog.cpp">
+      <Filter>Widget\Widget Source</Filter>
+    </ClCompile>
+    <ClCompile Include="DialogButton.cpp">
+      <Filter>Widget\Widget Source</Filter>
+    </ClCompile>
+    <ClCompile Include="EditWidget.cpp">
+      <Filter>Widget\Widget Source</Filter>
+    </ClCompile>
+    <ClCompile Include="FlashWidget.cpp">
+      <Filter>Widget\Widget Source</Filter>
+    </ClCompile>
+    <ClCompile Include="HyperlinkWidget.cpp">
+      <Filter>Widget\Widget Source</Filter>
+    </ClCompile>
+    <ClCompile Include="ListWidget.cpp">
+      <Filter>Widget\Widget Source</Filter>
+    </ClCompile>
+    <ClCompile Include="ScrollbarWidget.cpp">
+      <Filter>Widget\Widget Source</Filter>
+    </ClCompile>
+    <ClCompile Include="ScrollbuttonWidget.cpp">
+      <Filter>Widget\Widget Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Slider.cpp">
+      <Filter>Widget\Widget Source</Filter>
+    </ClCompile>
+    <ClCompile Include="TextWidget.cpp">
+      <Filter>Widget\Widget Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Widget.cpp">
+      <Filter>Widget\Widget Source</Filter>
+    </ClCompile>
+    <ClCompile Include="WidgetBuildBase.cpp">
+      <Filter>Widget\Widget Source</Filter>
+    </ClCompile>
+    <ClCompile Include="WidgetContainer.cpp">
+      <Filter>Widget\Widget Source</Filter>
+    </ClCompile>
+    <ClCompile Include="WidgetManager.cpp">
+      <Filter>Widget\Widget Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PakLib\PakInterface.cpp">
+      <Filter>PakLib</Filter>
+    </ClCompile>
+    <ClCompile Include="SexyAppBase.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Color.h">
+      <Filter>Graphics\Graphics Include</Filter>
+    </ClInclude>
+    <ClInclude Include="D3DInterface.h">
+      <Filter>Graphics\Graphics Include</Filter>
+    </ClInclude>
+    <ClInclude Include="D3DTester.h">
+      <Filter>Graphics\Graphics Include</Filter>
+    </ClInclude>
+    <ClInclude Include="DDImage.h">
+      <Filter>Graphics\Graphics Include</Filter>
+    </ClInclude>
+    <ClInclude Include="DDInterface.h">
+      <Filter>Graphics\Graphics Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Font.h">
+      <Filter>Graphics\Graphics Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics.h">
+      <Filter>Graphics\Graphics Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Image.h">
+      <Filter>Graphics\Graphics Include</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageFont.h">
+      <Filter>Graphics\Graphics Include</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryImage.h">
+      <Filter>Graphics\Graphics Include</Filter>
+    </ClInclude>
+    <ClInclude Include="NativeDisplay.h">
+      <Filter>Graphics\Graphics Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Quantize.h">
+      <Filter>Graphics\Graphics Include</Filter>
+    </ClInclude>
+    <ClInclude Include="SWTri.h">
+      <Filter>Graphics\Graphics Include</Filter>
+    </ClInclude>
+    <ClInclude Include="SysFont.h">
+      <Filter>Graphics\Graphics Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ImageLib\ImageLib.h">
+      <Filter>ImageLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ImageLib\png\png.h">
+      <Filter>ImageLib\PNG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ImageLib\png\pngasmrd.h">
+      <Filter>ImageLib\PNG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ImageLib\png\pngconf.h">
+      <Filter>ImageLib\PNG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ImageLib\jpeg\cderror.h">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ImageLib\jpeg\cdjpeg.h">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ImageLib\jpeg\jchuff.h">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ImageLib\jpeg\jconfig.h">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ImageLib\jpeg\jdct.h">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ImageLib\jpeg\jdhuff.h">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ImageLib\jpeg\jerror.h">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ImageLib\jpeg\jinclude.h">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ImageLib\jpeg\jmemsys.h">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ImageLib\jpeg\jmorecfg.h">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ImageLib\jpeg\jpegint.h">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ImageLib\jpeg\jpeglib.h">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ImageLib\jpeg\jversion.h">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ImageLib\jpeg\transupp.h">
+      <Filter>ImageLib\JPEG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ImageLib\zlib\deflate.h">
+      <Filter>ImageLib\ZLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ImageLib\zlib\infblock.h">
+      <Filter>ImageLib\ZLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ImageLib\zlib\infcodes.h">
+      <Filter>ImageLib\ZLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ImageLib\zlib\inffast.h">
+      <Filter>ImageLib\ZLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ImageLib\zlib\inffixed.h">
+      <Filter>ImageLib\ZLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ImageLib\zlib\inftrees.h">
+      <Filter>ImageLib\ZLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ImageLib\zlib\infutil.h">
+      <Filter>ImageLib\ZLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ImageLib\zlib\trees.h">
+      <Filter>ImageLib\ZLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ImageLib\zlib\zconf.h">
+      <Filter>ImageLib\ZLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ImageLib\zlib\zlib.h">
+      <Filter>ImageLib\ZLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ImageLib\zlib\zutil.h">
+      <Filter>ImageLib\ZLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="AutoCrit.h">
+      <Filter>Misc\Misc Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Buffer.h">
+      <Filter>Misc\Misc Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Common.h">
+      <Filter>Misc\Misc Include</Filter>
+    </ClInclude>
+    <ClInclude Include="CritSect.h">
+      <Filter>Misc\Misc Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Debug.h">
+      <Filter>Misc\Misc Include</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectXErrorString.h">
+      <Filter>Misc\Misc Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Flags.h">
+      <Filter>Misc\Misc Include</Filter>
+    </ClInclude>
+    <ClInclude Include="HTTPTransfer.h">
+      <Filter>Misc\Misc Include</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyCodes.h">
+      <Filter>Misc\Misc Include</Filter>
+    </ClInclude>
+    <ClInclude Include="memmgr.h">
+      <Filter>Misc\Misc Include</Filter>
+    </ClInclude>
+    <ClInclude Include="ModVal.h">
+      <Filter>Misc\Misc Include</Filter>
+    </ClInclude>
+    <ClInclude Include="MTRand.h">
+      <Filter>Misc\Misc Include</Filter>
+    </ClInclude>
+    <ClInclude Include="PerfTimer.h">
+      <Filter>Misc\Misc Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Point.h">
+      <Filter>Misc\Misc Include</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertiesParser.h">
+      <Filter>Misc\Misc Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Rect.h">
+      <Filter>Misc\Misc Include</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManager.h">
+      <Filter>Misc\Misc Include</Filter>
+    </ClInclude>
+    <ClInclude Include="SEHCatcher.h">
+      <Filter>Misc\Misc Include</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyMatrix.h">
+      <Filter>Misc\Misc Include</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyVector.h">
+      <Filter>Misc\Misc Include</Filter>
+    </ClInclude>
+    <ClInclude Include="SmartPtr.h">
+      <Filter>Misc\Misc Include</Filter>
+    </ClInclude>
+    <ClInclude Include="XMLParser.h">
+      <Filter>Misc\Misc Include</Filter>
+    </ClInclude>
+    <ClInclude Include="BassLoader.h">
+      <Filter>Sound\Sound Source</Filter>
+    </ClInclude>
+    <ClInclude Include="BassMusicInterface.h">
+      <Filter>Sound\Sound Include</Filter>
+    </ClInclude>
+    <ClInclude Include="DSoundInstance.h">
+      <Filter>Sound\Sound Include</Filter>
+    </ClInclude>
+    <ClInclude Include="DSoundManager.h">
+      <Filter>Sound\Sound Include</Filter>
+    </ClInclude>
+    <ClInclude Include="FModLoader.h">
+      <Filter>Sound\Sound Include</Filter>
+    </ClInclude>
+    <ClInclude Include="FModMusicInterface.h">
+      <Filter>Sound\Sound Include</Filter>
+    </ClInclude>
+    <ClInclude Include="FModSoundInstance.h">
+      <Filter>Sound\Sound Include</Filter>
+    </ClInclude>
+    <ClInclude Include="FModSoundManager.h">
+      <Filter>Sound\Sound Include</Filter>
+    </ClInclude>
+    <ClInclude Include="MusicInterface.h">
+      <Filter>Sound\Sound Include</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundInstance.h">
+      <Filter>Sound\Sound Include</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundManager.h">
+      <Filter>Sound\Sound Include</Filter>
+    </ClInclude>
+    <ClInclude Include="ogg\asm_arm.h">
+      <Filter>Sound\Ogg</Filter>
+    </ClInclude>
+    <ClInclude Include="ogg\backends.h">
+      <Filter>Sound\Ogg</Filter>
+    </ClInclude>
+    <ClInclude Include="ogg\codebook.h">
+      <Filter>Sound\Ogg</Filter>
+    </ClInclude>
+    <ClInclude Include="ogg\codec_internal.h">
+      <Filter>Sound\Ogg</Filter>
+    </ClInclude>
+    <ClInclude Include="ogg\config_types.h">
+      <Filter>Sound\Ogg</Filter>
+    </ClInclude>
+    <ClInclude Include="ogg\ivorbiscodec.h">
+      <Filter>Sound\Ogg</Filter>
+    </ClInclude>
+    <ClInclude Include="ogg\ivorbisfile.h">
+      <Filter>Sound\Ogg</Filter>
+    </ClInclude>
+    <ClInclude Include="ogg\lsp_lookup.h">
+      <Filter>Sound\Ogg</Filter>
+    </ClInclude>
+    <ClInclude Include="ogg\mdct.h">
+      <Filter>Sound\Ogg</Filter>
+    </ClInclude>
+    <ClInclude Include="ogg\mdct_lookup.h">
+      <Filter>Sound\Ogg</Filter>
+    </ClInclude>
+    <ClInclude Include="ogg\misc.h">
+      <Filter>Sound\Ogg</Filter>
+    </ClInclude>
+    <ClInclude Include="ogg\ogg.h">
+      <Filter>Sound\Ogg</Filter>
+    </ClInclude>
+    <ClInclude Include="ogg\os.h">
+      <Filter>Sound\Ogg</Filter>
+    </ClInclude>
+    <ClInclude Include="ogg\os_types.h">
+      <Filter>Sound\Ogg</Filter>
+    </ClInclude>
+    <ClInclude Include="ogg\registry.h">
+      <Filter>Sound\Ogg</Filter>
+    </ClInclude>
+    <ClInclude Include="ogg\window.h">
+      <Filter>Sound\Ogg</Filter>
+    </ClInclude>
+    <ClInclude Include="ogg\window_lookup.h">
+      <Filter>Sound\Ogg</Filter>
+    </ClInclude>
+    <ClInclude Include="ButtonListener.h">
+      <Filter>Widget\Widget Include</Filter>
+    </ClInclude>
+    <ClInclude Include="ButtonWidget.h">
+      <Filter>Widget\Widget Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Checkbox.h">
+      <Filter>Widget\Widget Include</Filter>
+    </ClInclude>
+    <ClInclude Include="CheckboxListener.h">
+      <Filter>Widget\Widget Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog.h">
+      <Filter>Widget\Widget Include</Filter>
+    </ClInclude>
+    <ClInclude Include="DialogButton.h">
+      <Filter>Widget\Widget Include</Filter>
+    </ClInclude>
+    <ClInclude Include="DialogListener.h">
+      <Filter>Widget\Widget Include</Filter>
+    </ClInclude>
+    <ClInclude Include="EditListener.h">
+      <Filter>Widget\Widget Include</Filter>
+    </ClInclude>
+    <ClInclude Include="EditWidget.h">
+      <Filter>Widget\Widget Include</Filter>
+    </ClInclude>
+    <ClInclude Include="FlashWidget.h">
+      <Filter>Widget\Widget Include</Filter>
+    </ClInclude>
+    <ClInclude Include="HyperlinkWidget.h">
+      <Filter>Widget\Widget Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Insets.h">
+      <Filter>Widget\Widget Include</Filter>
+    </ClInclude>
+    <ClInclude Include="ListListener.h">
+      <Filter>Widget\Widget Include</Filter>
+    </ClInclude>
+    <ClInclude Include="ListWidget.h">
+      <Filter>Widget\Widget Include</Filter>
+    </ClInclude>
+    <ClInclude Include="ScrollbarWidget.h">
+      <Filter>Widget\Widget Include</Filter>
+    </ClInclude>
+    <ClInclude Include="ScrollbuttonWidget.h">
+      <Filter>Widget\Widget Include</Filter>
+    </ClInclude>
+    <ClInclude Include="ScrollListener.h">
+      <Filter>Widget\Widget Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Slider.h">
+      <Filter>Widget\Widget Include</Filter>
+    </ClInclude>
+    <ClInclude Include="SliderListener.h">
+      <Filter>Widget\Widget Include</Filter>
+    </ClInclude>
+    <ClInclude Include="TextWidget.h">
+      <Filter>Widget\Widget Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Widget.h">
+      <Filter>Widget\Widget Include</Filter>
+    </ClInclude>
+    <ClInclude Include="WidgetContainer.h">
+      <Filter>Widget\Widget Include</Filter>
+    </ClInclude>
+    <ClInclude Include="WidgetManager.h">
+      <Filter>Widget\Widget Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PakLib\PakInterface.h">
+      <Filter>PakLib</Filter>
+    </ClInclude>
+    <ClInclude Include="SexyAppBase.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BltRotatedHelper.inc">
+      <Filter>Graphics\Inc Routines</Filter>
+    </None>
+    <None Include="DDI_Additive.inc">
+      <Filter>Graphics\Inc Routines</Filter>
+    </None>
+    <None Include="DDI_AlphaBlt.inc">
+      <Filter>Graphics\Inc Routines</Filter>
+    </None>
+    <None Include="DDI_BltRotated.inc">
+      <Filter>Graphics\Inc Routines</Filter>
+    </None>
+    <None Include="DDI_BltRotated_Additive.inc">
+      <Filter>Graphics\Inc Routines</Filter>
+    </None>
+    <None Include="DDI_FastBlt_NoAlpha.inc">
+      <Filter>Graphics\Inc Routines</Filter>
+    </None>
+    <None Include="DDI_FastStretch.inc">
+      <Filter>Graphics\Inc Routines</Filter>
+    </None>
+    <None Include="DDI_FastStretch_Additive.inc">
+      <Filter>Graphics\Inc Routines</Filter>
+    </None>
+    <None Include="DDI_NormalBlt_Volatile.inc">
+      <Filter>Graphics\Inc Routines</Filter>
+    </None>
+    <None Include="MI_AdditiveBlt.inc">
+      <Filter>Graphics\Inc Routines</Filter>
+    </None>
+    <None Include="MI_BltRotated.inc">
+      <Filter>Graphics\Inc Routines</Filter>
+    </None>
+    <None Include="MI_BltRotated_Additive.inc">
+      <Filter>Graphics\Inc Routines</Filter>
+    </None>
+    <None Include="MI_GetNativeAlphaData.inc">
+      <Filter>Graphics\Inc Routines</Filter>
+    </None>
+    <None Include="MI_GetRLAlphaData.inc">
+      <Filter>Graphics\Inc Routines</Filter>
+    </None>
+    <None Include="MI_NormalBlt.inc">
+      <Filter>Graphics\Inc Routines</Filter>
+    </None>
+    <None Include="MI_SlowStretchBlt.inc">
+      <Filter>Graphics\Inc Routines</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\ImageLib\jpeg2000\jas_cm.h">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\ImageLib\jpeg2000\jas_config.h">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\ImageLib\jpeg2000\jas_config2.h">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\ImageLib\jpeg2000\jas_debug.h">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\ImageLib\jpeg2000\jas_fix.h">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\ImageLib\jpeg2000\jas_getopt.h">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\ImageLib\jpeg2000\jas_icc.h">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\ImageLib\jpeg2000\jas_image.h">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\ImageLib\jpeg2000\jas_init.h">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\ImageLib\jpeg2000\jas_malloc.h">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\ImageLib\jpeg2000\jas_math.h">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\ImageLib\jpeg2000\jas_seq.h">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\ImageLib\jpeg2000\jas_stream.h">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\ImageLib\jpeg2000\jas_string.h">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\ImageLib\jpeg2000\jas_tvp.h">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\ImageLib\jpeg2000\jas_types.h">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\ImageLib\jpeg2000\jas_version.h">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\ImageLib\jpeg2000\jasper.h">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\ImageLib\jpeg2000\jp2_cod.h">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\ImageLib\jpeg2000\jp2_dec.h">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\ImageLib\jpeg2000\jpc_bs.h">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\ImageLib\jpeg2000\jpc_cod.h">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\ImageLib\jpeg2000\jpc_cs.h">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\ImageLib\jpeg2000\jpc_dec.h">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\ImageLib\jpeg2000\jpc_enc.h">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\ImageLib\jpeg2000\jpc_fix.h">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\ImageLib\jpeg2000\jpc_flt.h">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\ImageLib\jpeg2000\jpc_math.h">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\ImageLib\jpeg2000\jpc_mct.h">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\ImageLib\jpeg2000\jpc_mqcod.h">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\ImageLib\jpeg2000\jpc_mqdec.h">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\ImageLib\jpeg2000\jpc_mqenc.h">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\ImageLib\jpeg2000\jpc_qmfb.h">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\ImageLib\jpeg2000\jpc_t1cod.h">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\ImageLib\jpeg2000\jpc_t1dec.h">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\ImageLib\jpeg2000\jpc_t1enc.h">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\ImageLib\jpeg2000\jpc_t2cod.h">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\ImageLib\jpeg2000\jpc_t2dec.h">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\ImageLib\jpeg2000\jpc_t2enc.h">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\ImageLib\jpeg2000\jpc_tagtree.h">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\ImageLib\jpeg2000\jpc_tsfb.h">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\ImageLib\jpeg2000\jpc_util.h">
+      <Filter>ImageLib\JPEG2000</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

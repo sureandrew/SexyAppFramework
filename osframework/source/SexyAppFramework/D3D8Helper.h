@@ -1,7 +1,8 @@
 #ifndef __D3D8HELPER_H__
 #define __D3D8HELPER_H__
 
-#include <string>
+#include <windows.h>
+#include <stdio.h>
 
 namespace Sexy
 {

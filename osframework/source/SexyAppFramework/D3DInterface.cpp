@@ -5,6 +5,7 @@
 #include "SexyMatrix.h"
 #include "SexyAppBase.h"
 #include "TriVertex.h"
+#include "AutoCrit.h"
 #include <assert.h>
 #include <algorithm>
 
